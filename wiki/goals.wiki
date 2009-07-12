@@ -1,3 +1,11 @@
 used to track points
 
 transform xml data into mysql then run logic
+
+
+
+
+
+Advanced features.
+
+track how may races won, make alert/celebration upon a drivers first win

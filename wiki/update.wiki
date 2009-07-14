@@ -1,0 +1,33 @@
+reminder information for mike, useless info for steve?
+
+http://jwracing-online.com/area51/
+
+righthand 2 boxes prefixed with TRM
+
+made 2 very quick modules, (ignore date i couldnt be arsed to remove from existing code.)
+
+These are selectable modules in joomla which pulled the data dynamically from the back end database which gets its data from the XMLresults file. For the drivers best lap time you select the drivers name within the joomla module so dont have to fuck about with php/xml code on the server. 
+
+things learnt/refreshed
+how to create modules and import into joomla
+configuration of php to create sql queries from backend SQL data.
+
+
+need to do.
+find out the hex values from the TRM site for the colours used to format the tables.
+
+change the name of the track in the XML import to something we recognise such as pocono rather than guvenors cup etc.
+
+look into tieing in a users joomla username with the best race lap module so that it auto selects a drivers best lap times dependant on what username they have logged in with. maybe also list the fastest laptime/driver
+
+duplicate the racebestlap module to qual module as this is more informative, useful to have the arca version logic so that if there a physics change then you can see that the lap time was done on a previous physics version or have it just show the best q time from same physics version. maybe try be default the same physics version and if it doesnt exist then show the quickest from the last physic change and have an * or .png denoter
+
+come up with common naming sturcutre for the joomla modules.
+
+Start to populate the Q data from XML and finish importing in the Race XML
+
+start to buildin the season/data logic into the database and XML importer.
+
+
+end
+Mike

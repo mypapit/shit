@@ -2,11 +2,11 @@
 
 SELECT name,track,bestlap FROM `importer` WHERE name = "Steve Jones"
 
-SELECT name,track,bestlap FROM importer WHERE name = '$drivername'
+SELECT name,track,bestlap FROM importer WHERE name = '$drivername' ORDER by track
 
 
 top 3 fastest laps
 SELECT name,track,bestlap FROM `importer` order by bestlap asc limit 3
 
 
-SELECT distinct track,name,bestlap FROM `importer` group by track
+SELECT distinct track,name,bestlap FROM `importer` group by track ORDER by track

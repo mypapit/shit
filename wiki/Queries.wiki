@@ -10,3 +10,6 @@ SELECT name,track,bestlap FROM `importer` order by bestlap asc limit 3
 
 
 SELECT distinct track,name,bestlap FROM `importer` group by track ORDER by track
+
+basic team stuff
+SELECT firstname,surname,teamname FROM LMdrivers,LMteammembers,LMteams where LMteammembers.teamid = LMteams.teamid AND LMdrivers.driverid =LMteammembers.driverid

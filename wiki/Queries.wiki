@@ -19,3 +19,12 @@ SELECT firstname,surname,racepoints
 FROM LMresults
 INNER JOIN LMdrivers
 ON LMresults.driverid = LMdrivers.driverid
+
+SELECT firstname,surname,teamname,racepoints
+FROM LMdrivers,
+LMteams,
+LMteammembers,
+LMresults
+WHERE LMdrivers.driverid=LMresults.driverid AND LMteammembers.driverid = LMresults.driverid
+AND LMteams.teamid=LMteammembers.teamid
+ORDER BY racepoints desc

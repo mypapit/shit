@@ -24,3 +24,10 @@ best way is to create a table that has the teams points in it and an entry after
 so i need to learn the following.
 
 get the top 2 drivers from a team and push data into a table referencing schedule id driver id points and teamid
+
+so getting the top 2 drivers by points would be something like
+
+order by points desc limit 2.
+
+so i need to somehow do this for every time, do i create a view? for the snapshot?
+first it try to learn to create a query that displays the top2 from each team.

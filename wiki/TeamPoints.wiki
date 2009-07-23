@@ -2,9 +2,25 @@ Writeup on the team points.
 
 this "module" is trickier than expected, but thats a good thing :)
 
-here are the rules for the team mondule.
+here are the rules for the team module.
 
 
 different series have different rules
 
 
+a team can have 4 drivers
+the top 2 scoring drivers points for the team go towards the teams total.
+
+heres the tricky bit
+
+should a driver leave a team then there points stay at that team
+
+should a driver join a team there points from that moment are credited to the team.
+
+so we need to read the memberships of the teams when looking at the results.
+
+best way is to create a table that has the teams points in it and an entry after every schedule.
+
+so i need to learn the following.
+
+get the top 2 drivers from a team and push data into a table referencing schedule id driver id points and teamid

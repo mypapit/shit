@@ -28,4 +28,4 @@ manual import into mysql
 
 ==Next to create==
 
-we are looking to 
+Looking at checking integraty of results.xml importing the data from results file into a newly created table and then running the user UI sanity checks before importing the data into the database.

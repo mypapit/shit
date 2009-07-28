@@ -29,3 +29,7 @@ manual import into mysql
 ==Next to create==
 
 Looking at checking integraty of results.xml importing the data from results file into a newly created table and then running the user UI sanity checks before importing the data into the database.
+  # create temp table with relevent fields
+  # import the data into the table
+  # display the data vi php
+  # perform qualification of date/track

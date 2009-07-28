@@ -12,4 +12,9 @@
   # Take race results file
   # web interface to import file
   # Store on server for reference
+  
   # qualify the data that is check its clean from invalid characters
+  # cross reference the event to the schedule in the database
+  # cross reference the drivers in the results file to drivers in database
+  # Display example of data that will be entered, ie placing etc points, have an edit button
+  # Insert data into database

@@ -1,0 +1,7 @@
+importer routine.
+
+real basic overview.
+
+1. Take race results file
+2. Put lots of data into the data base
+3. Update site stats

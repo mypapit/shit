@@ -1,7 +1,15 @@
-importer routine.
+=Importer routine=
 
-real basic overview.
+==Real basic overview==
 
-1. Take race results file
-2. Put lots of data into the data base
-3. Update site stats
+  # Take race results file
+  # Put lots of data into the database
+  # Update site stats
+
+
+==Basic overview==
+
+  # Take race results file
+  # web interface to import file
+  # Store on server for reference
+  # qualify the data that is check its clean from invalid characters

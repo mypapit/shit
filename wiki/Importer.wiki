@@ -18,3 +18,14 @@
   # cross reference the drivers in the results file to drivers in database
   # Display example of data that will be entered, ie placing etc points, have an edit button
   # Insert data into database
+
+
+as of 28th July We have the following
+a perl script that will take the XML and output in csv format.
+hardcoded filename, output has to be redirected out via >
+
+manual import into mysql
+
+==Next to create==
+
+we are looking to 

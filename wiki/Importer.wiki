@@ -33,3 +33,17 @@ Looking at checking integraty of results.xml importing the data from results fil
   # import the data into the table
   # display the data vi php
   # perform qualification of date/track
+
+
+data that we want to be imported, and thusly needs to be extracted from the XML
+For all Drivers
+<RaceResults>
+<TimeString>
+<TrackEvent>
+<GameVersion>
+Per Driver
+Driver name <Name>
+Qual position <GridPos>
+Finish position <Position>
+Points <Points>
+

@@ -34,3 +34,11 @@ from
  (SELECT track, min( bestlap ) AS hotracelap
 FROM importer GROUP BY track) as x inner join importer as f on f.track = x.track and f.bestlap = x.hotracelap;
 }}}
+*gets 2 results from each track-butcher this to get points for top 2 drivers in a team*
+{{{select track,name, bestlap
+from importer
+where (
+   select count(*) from importer as f
+   where f.track = importer.track and f.bestlap < importer.bestlap
+) <= 1;
+}}}

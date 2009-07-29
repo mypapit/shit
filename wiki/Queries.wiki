@@ -28,3 +28,9 @@ LMresults
 WHERE LMdrivers.driverid=LMresults.driverid AND LMteammembers.driverid = LMresults.driverid
 AND LMteams.teamid=LMteammembers.teamid
 ORDER BY racepoints desc
+{{{
+select f.track,f.name,f.bestlap
+from
+ (SELECT track, min( bestlap ) AS hotracelap
+FROM importer GROUP BY track) as x inner join importer as f on f.track = x.track and f.bestlap = x.hotracelap;
+}}}

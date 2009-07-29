@@ -1,0 +1,53 @@
+#!/bin/perl
+BEGIN {
+    my $homedir = ( getpwuid($>) )[7];
+    my @user_include;
+    foreach my $path (@INC) {
+        if ( -d $homedir . '/perl' . $path ) {
+            push @user_include, $homedir . '/perl' . $path;
+        }
+    }
+    unshift @INC, @user_include;
+}
+
+use Mysql;
+
+
+$DBHOST = "localhost";
+$DBNAME = "removed for security";
+$DBUSER = "removed for security";
+$DBPASS = "removed for security";
+$tablename = "importer";
+
+$connect = Mysql->connect($DBHOST, $DBNAME, $DBUSER, $DBPASS);
+# SELECT DB
+$connect->selectdb($DBNAME);
+
+# DEFINE A MySQL QUERY
+$myquery = "SELECT * FROM $tablename";
+
+# EXECUTE THE QUERY FUNCTION
+$execute = $connect->query($myquery);
+
+# HTML TABLE
+print "<table border='1'><tr>
+<th>id</th>
+<th>product</th>
+<th>quantity</th>
+<th>4</th>
+<th>5</th>
+<th>6</th></tr>";
+
+# FETCHROW ARRAY
+
+while (@results = $execute->fetchrow()) {
+        print "<tr><td>"
+        .$results[0]."</td><td>"
+        .$results[1]."</td><td>"
+        .$results[2]."</td><td>"
+        .$results[3]."</td><td>"
+        .$results[4]."</td><td>"
+        .$results[5]."</td><td>";
+}
+
+print "</table>";

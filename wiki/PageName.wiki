@@ -1,3 +1,4 @@
+{{{
 #!/bin/perl
 BEGIN {
     my $homedir = ( getpwuid($>) )[7];
@@ -51,3 +52,4 @@ while (@results = $execute->fetchrow()) {
 }
 
 print "</table>";
+}}}

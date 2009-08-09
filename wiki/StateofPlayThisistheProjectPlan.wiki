@@ -1,0 +1,19 @@
+Ok so i seem to be developing this like a cow wandering across a field.
+
+
+state of play as of
+
+9th August.
+codefreeze on the server for Xpath1, Xpath2
+
+Xpath1
+Hardcoded with location of Arca results xml file and will output the following to screen
+
+csv format
+
+,trackname,drivername,Qualifying position,Race finish postition,fastest race laptime,finishing status
+
+Xpath2
+you specify the name of the XML file to parse i.e. ./xpath2 pocono16jan09.xml and it out puts to screen the following
+
+,trackname,drivername,Qualifying position,Race finish postition,fastest race laptime,finishing status,true/false did driver lead a lap,how many laps did driver lead for.

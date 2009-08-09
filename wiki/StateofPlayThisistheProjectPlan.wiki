@@ -22,3 +22,6 @@ To Do List.
   # poke into empty database the output of xpath2 by csv and SQL
   # create a date/track validator for poking data into the data base- lookup from the events table
   # chill
+
+
+comunity builder

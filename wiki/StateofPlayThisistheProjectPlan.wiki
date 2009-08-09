@@ -35,5 +35,14 @@ going to work on poking a line from the results file into the data base. i will 
 }}}
 as the control line
 
-i will use a database table called 9.8.1
+i will use a database table called 9_8_1 to push the data into
+the syntax for putting stuff into a mysql database is INSERT INTO people VALUES ('Euler', 'Leonhard', 248, NULL, 58, 'M')
+
+so we need to find the perl equivlent and then add it to our xpath2 parser(then add error handling to see if the line already exists as we dont want to end up with duplicate entries by mistake)
+
+CREATE table jwracing_jwracing.981 LIKE jwracing_jwracing.importer;
+INSERT into jwracing_jwracing.981 SELECT * FROM jwracing_jwracing.importer;
+
+./8911.pl  adds the line into the database
+
 

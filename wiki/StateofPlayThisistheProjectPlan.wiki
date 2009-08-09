@@ -24,6 +24,16 @@ To Do List.
   # create a date/track validator for poking data into the data base- lookup from the events table
   # chill
 
-*10th August*
+*9th August*
 
+9.8.1
 Steve has mentioned that joomla uses community builder for its integrated user logon and forum, so we will use that in the future
+
+going to work on poking a line from the results file into the data base. i will use the line
+{{{
+,Prarie Meadows 250,Mike Morris,1,2,23.1395,Finished Normally,true,3
+}}}
+as the control line
+
+i will use a database table called 9.8.1
+

@@ -1,19 +1,10 @@
 200 points for the win descending by 5 each position
 
-•  	   	Qualifying Points:  1st-15; 2nd-10; 3rd-5
-• 	  	5 pts. awarded to any official lap leader.
-• 	  	5 additional pts. awarded to leader of the most laps.
+  # Qualifying Points:  1st-15; 2nd-10; 3rd-5
+  # 5 pts. awarded to any official lap leader.
+  # 5 additional pts. awarded to leader of the most laps.
 
 
-in the results file there is under the driver 
-
-<Lap num="123" p="1"
-
-so for each driver we need the stats when pulling thier stuff ready for the database
-
-how many laps did they lead.   $LapsLead= magic here
-
-the the logic is 
 
 if $LapsLead>0 
 then insert 5 into importer.LedaLapPoints
@@ -36,4 +27,3 @@ end up with
 
 results
 id,scheduleid,driverid,qpos,finishpos,qpoints,racepoints,penaltypoints,ledalappoints,ledmostlapspoints,numberoflapsled,finishstatus,bestracelap,
-

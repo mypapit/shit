@@ -19,7 +19,7 @@ you specify the name of the XML file to parse i.e. ./xpath2 pocono16jan09.xml an
 
 To Do List.
   # ~~learn to poke some data from perl into mysql~~ 9.8.1
-  # learn to create empty database
+  # ~~learn to create empty database~~
   # ~~poke into empty database the output of xpath2 by SQL~~
   # create a date/track validator for poking data into the data base- lookup from the events table
   # chill
@@ -54,3 +54,11 @@ adds the line into the database
 *code freeze*
   # 8911.pl
   # 8912
+
+*10th August*
+
+"create a date/track validator for poking data into the data base- lookup from the events table"
+
+wonder what i meant when i typed that.
+
+ok so i think i meant that before we poke the data into the database we do a look up to see something. rather than jumping in with this lets have a think about what im trying to fix or stop from happening. first coffee time though

@@ -40,14 +40,6 @@ or maybe after we have imported some results put a flag somewhere to stop any re
 
 end up as 2009/07/07
 
-sorted with 
-$date = @dtss[0];
-$date =~ tr/\//-/;
-
-*codefreeze*
-1082, converts the date in XML to mysql format ready to inser into database
-
-
 *Codefreeze*
 1081, this will read in an XML and output the event name and create 2 variables $date $time of the event which is within the <Race>tags
 so whats next, dunno cant remember. ah yes the inputer validator will use the following to verify the result.  Date of race result and Event name/track name.
@@ -64,6 +56,14 @@ read xml file which makes a note of the date and trackcourse.
 see if we can get the schedule id based upon the above details.
 
 it would appear that the date in XML uses / and the date in mysql uses - so have to convert date in XML to -
+sorted with 
+{{{$date = @dtss[0];
+$date =~ tr/\//-/;}}}
+
+*codefreeze*
+1082, converts the date in XML to mysql format ready to inser into database
+
+
 
 ----
 *9th August.*

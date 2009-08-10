@@ -72,4 +72,16 @@ so step by step
 
   # XML, this is the results file produced by rFactor/ARCA
   # PARSER, This is perl code that extracts data from the XML file and pokes it into the temporary database table, ready to be validated and have bonus points assigned
-  #  RESULT PUSHER/BOUNUS POINT SCORER, this needs to be written and will validate the data in the table before pushing it into the main drivers results table it will also assign bonus points to the driver
+  #  RESULT PUSHER/LEDALAPBOUNUS POINT SCORER, this needs to be written and will validate the data in the table before pushing it into the main drivers results table it will also assign bonus points to the driver
+
+so what do we do next.
+lets break down RESULT PUSHER/LEDALAPBOUNUS POINT SCORER
+
+  # read a result line do some stuff on it and poke it into the main results table
+  # if the driver led a lap give them 5 points
+  # work out who led the most laps and give them 5 points for leading the most laps
+
+so how can we do this.
+  # read the line and see if it already exists in the results database based upon a specific piece of information such as DATE (which doesnt exist yet)
+
+the Date

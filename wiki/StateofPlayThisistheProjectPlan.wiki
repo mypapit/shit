@@ -51,9 +51,8 @@ we can do the race event from XML and Race event from sceduleid tallys with even
 
 right so lets do some code that does the following
 
-read xml file which makes a note of the date and trackcourse.
-
-see if we can get the schedule id based upon the above details.
+  * read xml file which makes a note of the date and trackcourse.
+  * see if we can get the schedule id based upon the above details.
 
 it would appear that the date in XML uses / and the date in mysql uses - so have to convert date in XML to -
 sorted with 
@@ -62,6 +61,10 @@ $date =~ tr/\//-/;}}}
 
 *codefreeze*
 1082, converts the date in XML to mysql format ready to inser into database
+
+* read xml file which makes a note of the date and trackcourse.
+*codefreeze*
+1083, displays trackcourse and date-converting date from XML format to mysql format
 
 
 

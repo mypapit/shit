@@ -87,7 +87,12 @@ next to merge that code with xml parser code
 
 *codefreeze*
 1085, gets the date from the XML and is put in the query which then returns the scheduleid number
+
 1086, cleaned up the output to something more than just 3, it tells you the date in the xml matches with scheduleid3
+
+1086, as well as telling you the schedule id based on the date in the xml, the program brings back the mysql coursetrack name.
+
+Next to do some comparing of the coursename in the xml against the mysql 
 
 ----
 *9th August.*

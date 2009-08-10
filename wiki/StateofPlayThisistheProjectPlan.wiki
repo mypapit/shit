@@ -44,3 +44,9 @@ CREATE table jwracing_jwracing.981 LIKE jwracing_jwracing.importer;
 INSERT into jwracing_jwracing.981 SELECT * FROM jwracing_jwracing.importer;
 
 ./8911.pl  adds the line into the database
+
+8912 adds an xml results into the database
+
+*code freeze*
+  # 8911.pl
+  # 8912

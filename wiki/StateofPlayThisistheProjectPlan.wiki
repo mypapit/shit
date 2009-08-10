@@ -41,8 +41,21 @@ or maybe after we have imported some results put a flag somewhere to stop any re
 end up as 2009/07/07
 
 *Codefreeze*
-1081, this will read in an XML and output the event name and create 2 varibales $date $time of the event which is within the <Race>
+1081, this will read in an XML and output the event name and create 2 variables $date $time of the event which is within the <Race>tags
+so whats next, dunno cant remember. ah yes the inputer validator will use the following to verify the result.  Date of race result and Event name/track name.
 
+we can do the race event from XML and Race event from sceduleid tallys with event name, which doesnt exist anyhwere yet, so that bit next look in XML for identification details of the track.
+<TrackVenue>Iowa Speedway</TrackVenue>
+<TrackCourse>Iowa Speedway</TrackCourse>
+<TrackEvent>Prarie Meadows 250</TrackEvent>
+
+right so lets do some code that does the following
+
+read xml file which makes a note of the date and trackcourse.
+
+see if we can get the schedule id based upon the above details.
+
+----
 *9th August.*
 codefreeze on the server for Xpath1, Xpath2
 

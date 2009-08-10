@@ -62,11 +62,21 @@ $date =~ tr/\//-/;}}}
 *codefreeze*
 1082, converts the date in XML to mysql format ready to inser into database
 
-* read xml file which makes a note of the date and trackcourse.
+  * read xml file which makes a note of the date and trackcourse.
 *codefreeze*
 1083, displays trackcourse and date-converting date from XML format to mysql format
 
+  * see if we can get the schedule id based upon the above details.
+so here we go, we need some kind of if statement to either say yes or no, we shove the date trackcouse data into variables and compare with the output of an SQL statement. firstly lets see if we can pull the out put of an SQL statement in php admin that shows the id based upon being given a date, lets try
 
+{{{select scheduleid from schedule where date = $date}}} substituting $date with the erm date 2009-06-09}}}
+{{{
+SELECT scheduleid
+FROM `LMschedule` 
+WHERE date = "2009-06-09"
+}}}
+
+comes back with 1 :)
 
 ----
 *9th August.*

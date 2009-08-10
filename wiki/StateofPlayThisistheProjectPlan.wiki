@@ -31,8 +31,14 @@ lets break down RESULT PUSHER/LEDALAPBOUNUS POINT SCORER
 so how can we do this.
   # read the line and see if it already exists in the results database based upon a specific piece of information such as DATE (which doesnt exist yet)
 
-the Date
+or maybe after we have imported some results put a flag somewhere to stop any results being imported. oh we need to have a look at the fields to see what needs creating i created a schema diagram somehwere, one of the columns will be eventid which we could use to do some logic with.
 
+1081 need to extract the race date from the xml and remove part of it so
+<Race>
+<TimeString>2009/07/07 21:09:56</TimeString>
+</Race?
+
+end up as 2009/07/07
 
 *9th August.*
 codefreeze on the server for Xpath1, Xpath2

@@ -85,7 +85,8 @@ so time to do the same from perl
 
 next to merge that code with xml parser code
 
-1085
+*codefreeze*
+1085, gets the date from the XML and is put in the query which then returns the scheduleid number
 
 ----
 *9th August.*

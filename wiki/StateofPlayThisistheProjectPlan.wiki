@@ -61,4 +61,15 @@ adds the line into the database
 
 wonder what i meant when i typed that.
 
-ok so i think i meant that before we poke the data into the database we do a look up to see something. rather than jumping in with this lets have a think about what im trying to fix or stop from happening. first coffee time though
+ok so i think i meant that before we poke the data into the database we do a look up to see something. rather than jumping in with this lets have a think about what im trying to fix or stop from happening. first coffee time though.
+.
+
+lets create a process (below) for the flow of data.
+
+XML->PARSER->database holding table->RESULT PUSHER/BOUNUS POINT SCORER->database results table.
+
+so step by step
+
+  # XML, this is the results file produced by rFactor/ARCA
+  # PARSER, This is perl code that extracts data from the XML file and pokes it into the temporary database table, ready to be validated and have bonus points assigned
+  #  RESULT PUSHER/BOUNUS POINT SCORER, this needs to be written and will validate the data in the table before pushing it into the main drivers results table it will also assign bonus points to the driver

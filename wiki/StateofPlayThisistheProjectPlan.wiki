@@ -35,17 +35,21 @@ going to work on poking a line from the results file into the data base. i will 
 }}}
 as the control line
 
-i will use a database table called 9_8_1 to push the data into
-the syntax for putting stuff into a mysql database is INSERT INTO people VALUES ('Euler', 'Leonhard', 248, NULL, 58, 'M')
+i will use a database table called 981 to push the data into
+the syntax for putting stuff into a mysql database is ~~INSERT INTO people VALUES ('Euler', 'Leonhard', 248, NULL, 58, 'M')~~
 
-so we need to find the perl equivlent and then add it to our xpath2 parser(then add error handling to see if the line already exists as we dont want to end up with duplicate entries by mistake)
+so we need to find the perl equivlent and then "merge" this with our xpath2 parser
 
-CREATE table jwracing_jwracing.981 LIKE jwracing_jwracing.importer;
-INSERT into jwracing_jwracing.981 SELECT * FROM jwracing_jwracing.importer;
+This creates a database table
+{{{CREATE table jwracing_jwracing.981 LIKE jwracing_jwracing.importer;}}}
+This copies the data from one table to another
+{{{INSERT into jwracing_jwracing.981 SELECT * FROM jwracing_jwracing.importer;}}}
 
-./8911.pl  adds the line into the database
+./8911.pl  
+{{{,Prarie Meadows 250,Mike Morris,1,2,23.1395,Finished Normally,true,3}}}
+adds the line into the database
 
-8912 adds an xml results into the database
+8912 adds a complete xml result file into the database
 
 *code freeze*
   # 8911.pl

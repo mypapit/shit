@@ -55,6 +55,8 @@ read xml file which makes a note of the date and trackcourse.
 
 see if we can get the schedule id based upon the above details.
 
+it would appear that the date in XML uses / and the date in mysql uses - so have to convert date in XML to -
+
 ----
 *9th August.*
 codefreeze on the server for Xpath1, Xpath2

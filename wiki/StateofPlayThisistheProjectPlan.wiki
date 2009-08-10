@@ -40,6 +40,9 @@ or maybe after we have imported some results put a flag somewhere to stop any re
 
 end up as 2009/07/07
 
+*Codefreeze*
+1081, this will read in an XML and output the event name and create 2 varibales $date $time of the event which is within the <Race>
+
 *9th August.*
 codefreeze on the server for Xpath1, Xpath2
 

@@ -79,8 +79,13 @@ WHERE date = "2009-06-09"
 comes back with 1 :)
 
 so time to do the same from perl
+
 *codefreeze*
 1084, compares a hardcoded date in the perl SQL statement againts the MySQL data base and returns the eventid of the matching event.
+
+next to merge that code with xml parser code
+
+1085
 
 ----
 *9th August.*

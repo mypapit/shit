@@ -87,6 +87,7 @@ next to merge that code with xml parser code
 
 *codefreeze*
 1085, gets the date from the XML and is put in the query which then returns the scheduleid number
+1086, cleaned up the output to something more than just 3, it tells you the date in the xml matches with scheduleid3
 
 ----
 *9th August.*

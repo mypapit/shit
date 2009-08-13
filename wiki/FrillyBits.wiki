@@ -1,0 +1,16 @@
+#This will list the Frilly bits for the the site
+
+= Introduction =
+stats stats stats
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * indicator of how many are signed up for the next race
+  * top right odometer, of how many races have been raced
+  * number of miles raced,
+  * number of green laps
+  * % of green laps
+  * average number of DNF per race
+

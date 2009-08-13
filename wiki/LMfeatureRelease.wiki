@@ -1,8 +1,15 @@
-
-
 v1
 Basic arca league stats
 Basic fastest race laptime
 
 v1.1
 Basic Teams
+
+V1.2
+F1 stuff
+
+V1.3
+Season generator
+
+v1.5
+Acheivements

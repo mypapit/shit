@@ -2,6 +2,15 @@ Ok so i seem to be developing this like a cow wandering across a field.
 
 =State of play as of= 
 
+*14th August*
+
+After a few days off, and having a play about with some pretty front end stuff its time to return to the backend. This week we are moving over to joomla 1.5 for the trm site not an easy choice for steve as he'd just gotten the 1 site back to a state where people are using it, but the main reasons are the stuff im writing is developed for 1.5 and most importantly 1.0 isnt supported by joomla anymore for security patches and as the las site went down due to security it would of only been a matter of time again. So steve needs to be applauded for a difficuly decision and migrating over to 1.5 so soon, cheers mate.
+
+right back to the back end. 
+constraint, enoise the hosting company make you jump through hoops to get shell access so it makes the leaguemanager program difficult to develop for so will have to work around that somehow.
+
+
+
 *10th August*
 
 "create a date/track validator for poking data into the data base- lookup from the events table"

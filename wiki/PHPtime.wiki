@@ -1,0 +1,7 @@
+Now that the Perl importer is practically done its time to convert it over to PHP.
+
+i say convert but really its time for me to learn PHP so that i can then convert it over. so heres a summary of what is needed with this PHP.
+
+
+1. PHP insert new team name into database.
+2. Allocate a driver into a team, by default they can be in a team called non which is allowed unlimited drivers

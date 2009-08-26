@@ -1,2 +1,7 @@
+Task List
+ARCA Basic League
+1. get league table to output using individual scalers rather than just outputing the result of a query.
 
-Perl basic importer
+Endurance
+
+F1

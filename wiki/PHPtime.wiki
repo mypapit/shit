@@ -10,6 +10,26 @@ ok so i forgot to track what im doing.
 
 i've decided to do something different, so presently im building the the schedule manager.
 
+schedule manager consists of the following
+
+to be able to schedule a race we need to know the following:
+  * whats the track
+  * whats the season/series being raced
+  * what game is it for
+  * when is the race
+
+the following are the tables
+
+WLMgame
+WLMtracks
+WLMseries
+WLMtracks
+
+
+
+
+
+
 
 current code allows an unauthenticated user to insert records into the WLMgame table.
 
@@ -27,7 +47,13 @@ NFSshift, daytona.
 
 so when we go to build a season we want just the tracks from that gametype/mod to be available, this allows for an auto generation of a season if required by just selecting the tracks which are valid.
 
+in v1 we have a very basic form which just allows inserting of game types.
 
+*roadmap*
+  * view existing games
+  * see how many/what tracks have been assigned to the game type
+  * add game types
+  * copy tracks to a game type (useful for if theres a new version ie ARCA10 and the same tracks exist)
 
 
 

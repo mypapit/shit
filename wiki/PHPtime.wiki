@@ -5,3 +5,33 @@ i say convert but really its time for me to learn PHP so that i can then convert
 
 1. PHP insert new team name into database.
 2. Allocate a driver into a team, by default they can be in a team called non which is allowed unlimited drivers
+
+ok so i forgot to track what im doing.
+
+i've decided to do something different, so presently im building the the schedule manager.
+
+
+current code allows an unauthenticated user to insert records into the WLMgame table.
+
+the WLMgame table consists of just 2 columns 
+
+ID,gamename
+
+this will be a master table in which tracks will be assigned as you can have the same namede track on different mods/game types.
+
+i.e.  
+
+ARCA, daytona
+FSone, daytona
+NFSshift, daytona.
+
+so when we go to build a season we want just the tracks from that gametype/mod to be available, this allows for an auto generation of a season if required by just selecting the tracks which are valid.
+
+
+
+
+
+
+
+
+

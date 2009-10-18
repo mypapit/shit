@@ -43,3 +43,15 @@ where (
    where f.track = importer.track and f.bestlap < importer.bestlap
 ) <= 1;
 }}}
+
+{{{
+SELECT track, Driver, totalpoints
+FROM `5`
+WHERE (
+SELECT count( * ) 
+FROM `5` AS f
+WHERE f.track = `5`.track
+AND f.totalpoints > `5`.totalpoints
+) <=1
+LIMIT 0 , 30
+}}}

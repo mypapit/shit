@@ -61,3 +61,10 @@ select * from `5`,WLMeventteam,WLMschedule where WLMdrivername = driver and WLMt
 AND WLMschedule.WLMschedule_id = 3
 LIMIT 0 , 30
 }}}
+and then sort and limit to top 2
+{{{
+select WLMschedule.WLMschedule_id,driver,track,totalpoints from `5`,WLMeventteam,WLMschedule where WLMdrivername = driver and WLMteam_id = 1 and `5`.date = WLMschedule.WLMdate and WLMeventteam.WLMschedule_id = WLMschedule.WLMschedule_id
+AND WLMschedule.WLMschedule_id = 3
+order by totalpoints desc
+LIMIT 2
+}}}

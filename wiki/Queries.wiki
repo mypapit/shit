@@ -55,3 +55,9 @@ AND f.totalpoints > `5`.totalpoints
 ) <=1
 LIMIT 0 , 30
 }}}
+gets back the results of a race for a single team
+{{{
+select * from `5`,WLMeventteam,WLMschedule where WLMdrivername = driver and WLMteam_id = 1 and `5`.date = WLMschedule.WLMdate and WLMeventteam.WLMschedule_id = WLMschedule.WLMschedule_id
+AND WLMschedule.WLMschedule_id = 3
+LIMIT 0 , 30
+}}}
